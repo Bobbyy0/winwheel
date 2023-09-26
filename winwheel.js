@@ -1683,12 +1683,12 @@ Winwheel.prototype.getIndicatedSegmentNumber = function()
 
     // Now we have the angle of the wheel, but we need to take in to account where the pointer is because
     // will not always be at the 12 o'clock 0 degrees location.
-    var relativeAngle = Math.floor(this.pointerAngle - rawAngle);
+    //var relativeAngle = Math.floor(this.pointerAngle - rawAngle);
 
-    if (relativeAngle < 0)
-    {
-        relativeAngle = 360 - Math.abs(relativeAngle);
-    }
+    //if (relativeAngle < 0)
+    //{
+        //relativeAngle = 360 - Math.abs(relativeAngle);
+    //}
 
     // Now we can work out the prize won by seeing what prize segment startAngle and endAngle the relativeAngle is between.
     for (x = 1; x < (this.segments.length); x ++)
